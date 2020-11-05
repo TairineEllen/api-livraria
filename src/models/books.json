@@ -68,12 +68,5 @@
     "autoria": "Nathan Hill",
     "editora": "Intrínseca",
     "emEstoque": false
-  },
-  {
-    "id": 11,
-    "titulo": "Se deus me chamar não vou",
-    "autoria": "Mariana Salomão Carrara",
-    "editora": "Nós",
-    "emEstoque": true
   }
 ]
