@@ -84,6 +84,31 @@ const updateBookWithPut = (req, res) => {
   };
 };
 
+const updateBookWithPatch = (req, res) => {
+  const id = req.params.id;
+
+  try {
+    const bookToBeUpdated = books.find(book => book.id == id);
+
+    if (bookToBeUpdated) {
+      const newInfos = req.body;
+
+      Object.keys(newInfos).forEach(key => {
+        bookToBeUpdated[key] = newInfos[key]
+      });
+
+      updateJsonFile('Livro atualizado com sucesso');
+
+      res.status(200).send(bookToBeUpdated);
+
+    } else {
+      res.status(404).send('Livro não encontrado');
+    };
+  } catch (error) {
+    res.status(424).send('Erro interno no servidor');
+  };
+};
+
 const deleteBook = (req, res) => {
   const id = req.params.id;
 
@@ -111,5 +136,6 @@ module.exports = {
   getBooksByPublisher,
   registerBook,
   updateBookWithPut,
+  updateBookWithPatch,
   deleteBook
 };
