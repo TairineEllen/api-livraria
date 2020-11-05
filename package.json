@@ -1,0 +1,23 @@
+{
+  "name": "api-livraria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[D\u001b[C\u001b[D\u001b[D\u001b[D\u001bserver\u001b[2~.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TairineEllen/api-livraria.git"
+  },
+  "author": "TairineEllen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TairineEllen/api-livraria/issues"
+  },
+  "homepage": "https://github.com/TairineEllen/api-livraria#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
