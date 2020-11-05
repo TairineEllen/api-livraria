@@ -1,1 +1,79 @@
-[{"id":1,"titulo":"A cantiga dos pássaros e das serpentes","autoria":"Suzanne Collins","editora":"Rocco","emEstoque":true},{"id":2,"titulo":"Princesa Mecânica","autoria":"Cassandra Clare","editora":"Galera Record","emEstoque":false}]
+[
+  {
+    "id": 1,
+    "titulo": "A cantiga dos pássaros e das serpentes",
+    "autoria": "Suzanne Collins",
+    "editora": "Rocco",
+    "emEstoque": true
+  },
+  {
+    "id": 2,
+    "titulo": "Princesa Mecânica",
+    "autoria": "Cassandra Clare",
+    "editora": "Galera Record",
+    "emEstoque": false
+  },
+  {
+    "id": 3,
+    "titulo": "Os Testamentos",
+    "autoria": "Margaret Atwood",
+    "editora": "Rocco",
+    "emEstoque": true
+  },
+  {
+    "id": 4,
+    "titulo": "Americanah",
+    "autoria": "Chimamanda Ngozi Adichie",
+    "editora": "Companhia das Letras",
+    "emEstoque": true
+  },
+  {
+    "id": 5,
+    "titulo": "Meu ano de descanso e relaxamento",
+    "autoria": "Ottessa Moshfegh",
+    "editora": "Todavia",
+    "emEstoque": false
+  },
+  {
+    "id": 6,
+    "titulo": "Tudo o que nunca contei",
+    "autoria": "Celeste Ng",
+    "editora": "Intrínseca",
+    "emEstoque": false
+  },
+  {
+    "id": 7,
+    "titulo": "Jogos Vorazes",
+    "autoria": "Suzanne Collins",
+    "editora": "Rocco",
+    "emEstoque": true
+  },
+  {
+    "id": 8,
+    "titulo": "Precisamos de novos nomes",
+    "autoria": "NoViolet Bulawayo",
+    "editora": "Biblioteca Azul",
+    "emEstoque": true
+  },
+  {
+    "id": 9,
+    "titulo": "Ser feliz é assim",
+    "autoria": "Jennifer E. Smith",
+    "editora": "Galera Record",
+    "emEstoque": true
+  },
+  {
+    "id": 10,
+    "titulo": "Nix",
+    "autoria": "Nathan Hill",
+    "editora": "Intrínseca",
+    "emEstoque": false
+  },
+  {
+    "id": 11,
+    "titulo": "Se deus me chamar não vou",
+    "autoria": "Mariana Salomão Carrara",
+    "editora": "Nós",
+    "emEstoque": true
+  }
+]

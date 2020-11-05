@@ -1,6 +1,12 @@
 const books = require('../models/books.json');
 const fs = require('fs')
 
+const createJsonFile = mes => {
+  fs.writeFile('./src/models/books.json', JSON.stringify(books), 'utf-8', err => {
+    err ? res.status(424).send({ message: err.message }) : console.info(mes)
+  });
+};
+
 const postBook = (req, res) => {
   let id = 1;
 
@@ -11,10 +17,7 @@ const postBook = (req, res) => {
 
   books.push({ id, titulo, autoria, editora, emEstoque });  
 
-  fs.writeFile('./src/models/books.json', JSON.stringify(books), 'utf-8', err => {
-    err ? res.status(424).send({ message: err.message }) : console.info('Arquivo atualizado com sucesso')
-  });
-
+  createJsonFile('Livro registrado com sucesso');  
   res.status(201).send(books);
 };
 
