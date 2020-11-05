@@ -62,9 +62,9 @@ Com base nas instruções acima, os seguintes contratos estão disponíveis:
 | PUT          | `/livros/:id`                                   | Atualizar todas as informações de um livro           |
 | PUT          | `/funcionarios/:id`             | Atualizar todas as informações de um funcionário                   |
 | PATCH        | `/livros/:id`                   | Atualizar uma ou mais informações de um livro                        | 
-| PATCH        | `/funcionarios/:id`                              | Atualizar uma ou mais informações de um funcionários   |
+| PATCH        | `/funcionarios/:id`                              | Atualizar uma ou mais informações de um funcionário   |
 | DELETE       |  `/livros/:id`                       | Excluir um livro              |
-| DELETE       |  `/funcionarios/:id`                       | Excluir um funcionários              |
+| DELETE       |  `/funcionarios/:id`                       | Excluir um funcionário              |
 
 ---
 
