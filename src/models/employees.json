@@ -2,51 +2,61 @@
   {
     "id": 1,
     "nome": "Tairine Ellen",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "gerente"
   },
   {
     "id": 2,
     "nome": "Nilton Everton",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "vendedor"
   },
   {
     "id": 3,
     "nome": "Bruce",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "vendedor"
   },
   {
     "id": 4,
     "nome": "João Felipe",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "caixa"
   },
   {
     "id": 5,
     "nome": "Karol",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "caixa"
   },
   {
     "id": 6,
     "nome": "Amanda",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "recepcionista"
   },
   {
     "id": 7,
     "nome": "Neto",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "gerente financeiro"
   },
   {
     "id": 8,
     "nome": "José",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "caixa"
   },
   {
     "id": 9,
     "nome": "Raquel",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "vendedora"
   },
   {
     "id": 10,
     "nome": "Tais",
+    "dataDeNascimento": "25/01/1992",
     "cargo": "estoquista"
   }
 ]
