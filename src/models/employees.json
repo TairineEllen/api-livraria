@@ -3,5 +3,50 @@
     "id": 1,
     "nome": "Tairine Ellen",
     "cargo": "gerente"
+  },
+  {
+    "id": 2,
+    "nome": "Nilton Everton",
+    "cargo": "vendedor"
+  },
+  {
+    "id": 3,
+    "nome": "Bruce",
+    "cargo": "vendedor"
+  },
+  {
+    "id": 4,
+    "nome": "João Felipe",
+    "cargo": "caixa"
+  },
+  {
+    "id": 5,
+    "nome": "Karol",
+    "cargo": "caixa"
+  },
+  {
+    "id": 6,
+    "nome": "Amanda",
+    "cargo": "recepcionista"
+  },
+  {
+    "id": 7,
+    "nome": "Neto",
+    "cargo": "gerente financeiro"
+  },
+  {
+    "id": 8,
+    "nome": "José",
+    "cargo": "caixa"
+  },
+  {
+    "id": 9,
+    "nome": "Raquel",
+    "cargo": "vendedora"
+  },
+  {
+    "id": 10,
+    "nome": "Tais",
+    "cargo": "estoquista"
   }
 ]
