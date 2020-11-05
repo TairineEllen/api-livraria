@@ -1,5 +1,6 @@
 const books = require('../models/books.json');
 const fs = require('fs');
+const { runInNewContext } = require('vm');
 
 const updateJsonFile = mess => {
   fs.writeFile('./src/models/books.json', JSON.stringify(books), 'utf-8', err => {
@@ -60,6 +61,29 @@ const registerBook = (req, res) => {
   };
 };
 
+const updateBookWithPut = (req, res) => {
+  const id = req.params.id;
+
+  try {
+    const bookToBeUpdated = books.find(book => book.id == id);
+
+    if (bookToBeUpdated) {
+      const newInfos = req.body;
+      const index = books.indexOf(bookToBeUpdated);
+
+      books.splice(index, 1, newInfos);
+      updateJsonFile('Livro atualizado com sucesso');
+
+      res.status(200).send(bookToBeUpdated);
+
+    } else {
+      res.status(404).send('Livro não encontrado');
+    };
+  } catch (error) {
+    res.status(424).send('Erro interno no servidor');
+  };
+};
+
 const deleteBook = (req, res) => {
   const id = req.params.id;
 
@@ -86,5 +110,6 @@ module.exports = {
   getBooksInStock,
   getBooksByPublisher,
   registerBook,
+  updateBookWithPut,
   deleteBook
 };
