@@ -52,6 +52,30 @@ const registerEmployee = (req, res) => {
   };
 };
 
+const updateEmployeeWithPut = (req, res) => {
+  const id = req.params.id;
+
+  try {
+    const employeeToBeUpdated = employees.find(employee => employee.id == id);
+
+    if (employeeToBeUpdated) {
+      const newInfos = req.body;
+      const index = employees.indexOf(employeeToBeUpdated);
+
+      employees.splice(index, 1, newInfos);
+
+      updateJsonFile('Livro atualizado com sucesso');
+
+      res.status(200).send(employeeToBeUpdated);
+
+    } else {
+      res.status(404).send('Livro não encontrado');
+    };
+  } catch (error) {
+    res.status(424).send('Erro interno no servidor');
+  };
+};
+
 const deleteEmployee = (req, res) => {
   const id = req.params.id;
 
@@ -78,5 +102,6 @@ module.exports = {
   getAllEmployees,
   getAgeEmployeeById,
   registerEmployee,
+  updateEmployeeWithPut,
   deleteEmployee
 };
