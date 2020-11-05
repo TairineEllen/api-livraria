@@ -7,6 +7,10 @@ const updateJsonFile = mes => {
   });
 };
 
+const getAllEmployees = (req, res) => {
+  res.status(200).send(employees);
+};
+
 const registerEmployee = (req, res) => {
   let id = 1;
 
@@ -49,6 +53,7 @@ const deleteEmployee = (req, res) => {
 };
 
 module.exports = {
+  getAllEmployees,
   registerEmployee,
   deleteEmployee
 };
