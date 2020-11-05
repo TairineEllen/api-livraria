@@ -7,6 +7,15 @@ const updateJsonFile = mess => {
   });
 };
 
+const getBooksInStock = (req, res) => {
+  try {
+    const bookInStock = books.filter(book => book.emEstoque);
+    res.status(200).send(bookInStock);
+  } catch (error) {
+    res.status(424).send('Erro interno no servidor');
+  };
+};
+
 const registerBook = (req, res) => {
   let id = 1;
 
@@ -44,6 +53,7 @@ const deleteBook = (req, res) => {
 };
 
 module.exports = {
+  getBooksInStock,
   registerBook,
   deleteBook
 };
